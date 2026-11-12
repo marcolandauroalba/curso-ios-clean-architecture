@@ -10,6 +10,15 @@
       "Base",
     ],
   },
+  "packages": [
+    {
+      "kind": "remote",
+      "repository": "https://github.com/SimplyDanny/SwiftLintPlugins",
+      "version": {
+        "version": "0.65.1",
+      },
+    },
+  ],
   "files": [
     { "kind": "folder", "path": "curso-ios-clean-architecture-marco", "target-membership": [ "curso-ios-clean-architecture-marco" ] },
     {
@@ -26,6 +35,9 @@
       "id": "DE35A38430A57C93008D3F07",
       "product": "Products/curso-ios-clean-architecture-marco.app",
       "product-type": "application",
+      "dependencies": [
+        { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
+      ],
       "build-phases": [
         "compile-sources",
         "frameworks",

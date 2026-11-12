@@ -1,0 +1,9 @@
+line_length:
+  warning: 120
+  ignores_urls: true
+
+# El nombre de la plantilla de Xcode (curso_ios_clean_architectureApp) usa
+# guiones bajos y empieza en minúscula.
+type_name:
+  allowed_symbols: ["_"]
+  validates_start_with_lowercase: off
